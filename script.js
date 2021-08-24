@@ -27,3 +27,26 @@ $("#hour15 .description").val(localStorage.getItem("hour15"));
 $("#hour16 .description").val(localStorage.getItem("hour16"));
 $("#hour17 .description").val(localStorage.getItem("hour17"));
 
+//
+function hours() {
+    var currentTime = time().hour();
+        $(".hour-block").each(function () {
+
+        var blockTime = parseInt($(this)
+            .attr("id").split("hour")[1]);
+        if (blockTime < currentTime) {
+            $(this).addClass("past");
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+        } else if (blockTime === currentTime) {
+            $(this).addClass("past");
+                $(this).removeClass("present");
+                $(this).removeClass("future");
+        } else {
+            $(this).removeClass("present");
+                $(this).removeClass("past");
+                $(this).addClass("future");
+            }
+        })
+    }
+hours();
