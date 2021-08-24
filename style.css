@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular','Open Sans', Verdana, sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -25,10 +25,10 @@ textarea{
   white-space: pre-wrap;
 }
 
-.time-block{
+/* .time-block{
   text-align: center;
   border-radius: 15px;
-}
+} */
 
 .hour-block{
   text-align: left;
@@ -39,7 +39,7 @@ textarea{
   white-space: pre-wrap;
   min-height: 80px;
   border-top: 1px solid white;
-  background: white;
+  background-color: white;
 }
 
 .hour {
