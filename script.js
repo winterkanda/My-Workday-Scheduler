@@ -29,14 +29,18 @@ $("#hour17").children(".description").val(localStorage.getItem("hour17"));
 
 //
 function hours() {
-    var currentTime = parseInt(moment().format("hh"))
+    var currentTime = parseInt(moment().format("k"))
         $(".hour-block").each(function () {
 
         var blockTime = parseInt($(this)
             .attr("id").split("hour")[1]);
+            console.log("=============== start block")
 
             console.log(currentTime)
             console.log(blockTime)
+
+            console.log("=============== start block")
+            
         if (blockTime < currentTime) {
             $(this).addClass("past");
                 $(this).removeClass("future");
