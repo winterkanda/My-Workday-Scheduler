@@ -21,7 +21,7 @@ This is a simple daily planner application that uses Moment.js and is powered by
 
 
 ## Live Website
-
+https://winterkanda.github.io/My-Workday-Scheduler/
 
 &nbsp;  
 
